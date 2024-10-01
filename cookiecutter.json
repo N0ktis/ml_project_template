@@ -1,0 +1,8 @@
+{
+    "project_name": "Project name",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "description": "A short description of the project",
+    "author_name": "Your name",
+    "author_email": "Your email",
+    "project_python_version": "3.10.14"
+}
