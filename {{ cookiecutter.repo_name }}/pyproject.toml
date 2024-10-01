@@ -2,11 +2,10 @@
 name = "{{ cookiecutter.repo_name }}"
 version = "0.1.0"
 description = "{{ cookiecutter.description }}"
-authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 packages = [{ include = "src"}]
 
 [tool.poetry.dependencies]
-python = "{{ cookiecutter.project_python_version }}"
+python = "3.10.14"
 requests = "*"
 pandas = "~1.2"
 scikit-learn = "~1.1.1"
@@ -21,17 +20,10 @@ pre-commit = "*"
 isort = "^5.12.0"
 flake8 = "^3.9.0"
 jupyter = "*"
-matplotlib = "*"
-seaborn = "*"
 mypy = "^0.960"
 nbqa = "^0.5.9"
 autoflake = "*"
 pydocstyle = "^6.1.1"
-mlflow = "^2.5.0"
-
-[tool.poetry.scripts]
-train = "src.models.train:main"
-predict = "src.models.predict:main"
 
 [tool.nbqa.mutate]
 black = 1

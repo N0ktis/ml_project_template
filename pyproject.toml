@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "ml-template"
+name = "ml-project-template"
 version = "0.4.0"
 description = "Template to use in our ML projects"
-authors = ["Nikita Barsukov <nbarsukov@ptsecurity.com>","Nikolay Lyfenko <nlyfenko@ptsecurity.com>","Aleksey Zhurin <azhurin@ptsecurity.com>"]
+authors = ["Aleksey Zhurin <2010zalex@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"

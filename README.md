@@ -16,7 +16,7 @@ pip3 install cookiecutter rich
 ### To start a new project, run:
 ------------
 
-    cookiecutter git+ssh://git@gitlab.ptsecurity.com/ml-products-research/ml-template.git
+    cookiecutter https://github.com/N0ktis/ml_project_template
 
 
 ### The resulting directory structure
@@ -44,18 +44,11 @@ pip3 install cookiecutter rich
 │   │
 │   ├── config.py           <- Configuration as python file for easier parsing and changing.
 │   │
-│   └── models              <- Scripts to train models and then use trained models to make
-│       │                      predictions.
-│       ├── train.py        <- Train.
-│       └── predict.py      <- Predict.
+│   ├── data_tools          <- Scripts to download\upload and preprocess data
+│   │
+│   └── utils		    <- Useful scripts for different parts in project
 │
-├── Dockerfile              <- If your project can be built in Docker.
-│
-├── .gitlab-ci.yml          <- CI.
-│
-├── build_local.sh          <- Local build in docker container.
-│
-├── build_functions.sh      <- Functions for build_local.sh and .gitlab-ci.yml.
+├── docker-compose.yml      <- If your project can be built in Docker.
 │
 ├── .env                    <- Credentials.
 │
